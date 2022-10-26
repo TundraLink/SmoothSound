@@ -1,0 +1,16 @@
+D:\TromboneChampMods\SmoothSound\bin\Debug\net48\SmoothSound.dll
+D:\TromboneChampMods\SmoothSound\bin\Debug\net48\SmoothSound.pdb
+D:\TromboneChampMods\SmoothSound\bin\Debug\net48\Assembly-CSharp-firstpass.dll
+D:\TromboneChampMods\SmoothSound\bin\Debug\net48\Assembly-CSharp-nstrip.dll
+D:\TromboneChampMods\SmoothSound\bin\Debug\net48\BepInEx.Harmony.dll
+D:\TromboneChampMods\SmoothSound\bin\Debug\net48\TrombSettings.dll
+D:\TromboneChampMods\SmoothSound\bin\Debug\net48\UnityEngine.UI.dll
+D:\TromboneChampMods\SmoothSound\obj\Debug\net48\SmoothSound.csproj.AssemblyReference.cache
+D:\TromboneChampMods\SmoothSound\obj\Debug\net48\PluginInfo.cs
+D:\TromboneChampMods\SmoothSound\obj\Debug\net48\SmoothSound.GeneratedMSBuildEditorConfig.editorconfig
+D:\TromboneChampMods\SmoothSound\obj\Debug\net48\SmoothSound.AssemblyInfoInputs.cache
+D:\TromboneChampMods\SmoothSound\obj\Debug\net48\SmoothSound.AssemblyInfo.cs
+D:\TromboneChampMods\SmoothSound\obj\Debug\net48\SmoothSound.csproj.CoreCompileInputs.cache
+D:\TromboneChampMods\SmoothSound\obj\Debug\net48\SmoothSound.csproj.CopyComplete
+D:\TromboneChampMods\SmoothSound\obj\Debug\net48\SmoothSound.dll
+D:\TromboneChampMods\SmoothSound\obj\Debug\net48\SmoothSound.pdb
