@@ -66,7 +66,7 @@ namespace SmoothSound
                     case SoundState.FadingIn: 
                         source.volume = Globals.fadeInVols[volStage++];
                         if(volStage >= Globals.fadeInVols.Length - 1){
-                            source.volume = 1f;
+                            source.volume = Globals.trombVolume;
                             state = SoundState.Playing;
                         }
                         break;

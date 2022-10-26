@@ -47,6 +47,15 @@ namespace SmoothSound {
                 fadeInVols[i] *= trombVolume;
                 fadeOutVols[i] *= trombVolume;
             }
+            foreach(float t in stopVols){
+                Plugin.LogDebug("Stop :" + t.ToString());
+            }
+            foreach(float t in fadeOutVols){
+                Plugin.LogDebug("Fade Out :" + t.ToString());
+            }
+            foreach(float t in fadeInVols){
+                Plugin.LogDebug("Fade In :" + t.ToString());
+            }
         }
         public static IEnumerator assignClips(GameController __instance){
             while(__instance.trombclips == null){
