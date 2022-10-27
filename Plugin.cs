@@ -19,7 +19,7 @@ using TrombSettings;
 namespace SmoothSound
 {
     [HarmonyPatch]
-    [BepInPlugin("SmoothSound", "SmoothSound", "1.0.0")]
+    [BepInPlugin("SmoothSound", "SmoothSound", "1.0.1")]
     [BepInDependency("com.hypersonicsharkz.trombsettings")]
     public class Plugin : BaseUnityPlugin
     {
