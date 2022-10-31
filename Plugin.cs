@@ -33,6 +33,12 @@ namespace SmoothSound
             useFade = Config.Bind<bool>("Note Settings", "UseFade", true, "Use fading when the current note is far from where it started");
             fadeFactor = Config.Bind<float>("Note settings", "TransitionDistance", 3f, "Additional distance before played note transitions to nearest clip");
             fadeTime = Config.Bind<float>("Note settings", "FadeTime", 5f, "Time in ms between fade steps");
+            defaultVolume = Config.Bind<float>("Soundset settings", "default", 1f, "Volume of Trombone soundset");
+            bassVolume = Config.Bind<float>("Soundset settings", "bass", 0.77f, "Volume of Bass Trombone soundset");
+            mutedVolume = Config.Bind<float>("Soundset settings", "muted", 0.34f, "Volume of Muted soundset");
+            eightbitVolume = Config.Bind<float>("Soundset settings", "eightbit", 0.25f, "Volume of 8-Bit! soundset");
+            clubVolume = Config.Bind<float>("Soundset settings", "club", 0.25f, "Volume of \"In The Club\" soundset");
+            fartVolume = Config.Bind<float>("Soundset settings", "fart", 0.75f, "Volume of Gassy soundset");
             
             TrombEntryList trombEntryList = TrombConfig.TrombSettings["Smooth Sound"]; 
             trombEntryList.Add(pluginEnabled);
@@ -79,6 +85,12 @@ namespace SmoothSound
         public static ConfigEntry<float> trombVolume;
         public static ConfigEntry<float> fadeFactor;
         public static ConfigEntry<float> fadeTime;
+        public static ConfigEntry<float> defaultVolume;
+        public static ConfigEntry<float> bassVolume;
+        public static ConfigEntry<float> mutedVolume;
+        public static ConfigEntry<float> eightbitVolume;
+        public static ConfigEntry<float> clubVolume;
+        public static ConfigEntry<float> fartVolume;
         public static ConfigEntry<bool> pluginEnabled;
         public static ConfigEntry<bool> useDefaultPitch;
         public static ConfigEntry<bool> useFade;

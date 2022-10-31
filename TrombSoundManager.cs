@@ -21,17 +21,19 @@ namespace SmoothSound
         [HarmonyPatch("Start")]
         [HarmonyPostfix]
         public static void StartPatch(GameController __instance){
-            Globals.Init();
+            Globals.Init(__instance);
             unusedSounds = new LinkedList<Sound>();
             fadingSounds = new LinkedList<Sound>();
             for(int i = 0; i < Globals.totalSounds; i++){
                 unusedSounds.AddFirst(new Sound(GameObject.Instantiate<AudioSource>(__instance.currentnotesound, __instance.currentnotesound.transform.parent), 0f));
+                Plugin.LogDebug(unusedSounds.First.Value.source.ToString());
             }
             Globals.linePositions = __instance.notelinepos;
             Globals.semitoneDistance = __instance.vbounds/12f;
             pointer = __instance.pointer;
             __instance.musictrack.volume = Plugin.trackVolume.Value;
             __instance.StartCoroutine(Globals.assignClips(__instance));
+            __instance.notestartpos = 0f;
         }
 
         [HarmonyPatch("stopNote")]

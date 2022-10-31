@@ -939,7 +939,7 @@
     "C:\\Users\\Sebastien\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "restore": {
       "projectUniqueName": "D:\\TromboneChampMods\\SmoothSound\\SmoothSound.csproj",
       "projectName": "SmoothSound",
@@ -949,7 +949,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "D:\\TromboneChampMods\\SmoothSound\\NuGet.Config",
-        "D:\\TromboneChampMods\\NuGet.Config",
         "C:\\Users\\Sebastien\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

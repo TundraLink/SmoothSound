@@ -23,10 +23,32 @@ namespace SmoothSound {
         Idle
     }
     class Globals{
-        public static void Init(){
-            trombVolume = Plugin.trombVolume.Value;
+        public static void Init(GameController __instance){
             fadeFactor = Plugin.fadeFactor.Value;
             volStepLength = Plugin.fadeTime.Value / 1000f;
+            switch(__instance.soundset){
+                case 0:
+                    trombVolume = Plugin.trombVolume.Value * Plugin.defaultVolume.Value;
+                    break;
+                case 1:
+                    trombVolume = Plugin.trombVolume.Value * Plugin.bassVolume.Value;
+                    break;
+                case 2:
+                    trombVolume = Plugin.trombVolume.Value * Plugin.mutedVolume.Value;
+                    break;
+                case 3:
+                    trombVolume = Plugin.trombVolume.Value * Plugin.eightbitVolume.Value;
+                    break;
+                case 4:
+                    trombVolume = Plugin.trombVolume.Value * Plugin.clubVolume.Value;
+                    break;
+                case 5:
+                    trombVolume = Plugin.trombVolume.Value * Plugin.fartVolume.Value;
+                    break;
+                default:
+                    trombVolume = Plugin.trombVolume.Value;
+                    break;
+            }
 
             List<float> temp = new List<float>();
             for(float i = 1f; i > 0.7f; i -= 0.03f){
@@ -62,6 +84,7 @@ namespace SmoothSound {
                 yield return null;
             }
             tclips = __instance.trombclips.tclips;
+            __instance.currentnotesound.clip = tclips[0];
             yield break;
         }
         public static float[] linePositions;
